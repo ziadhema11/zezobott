@@ -22,10 +22,10 @@ supportid: '1003696006770208849',
   premium: "1003696006770208849"
   },
   support: "https://discord.gg/rdHVty98rJ",
-  Dashboard: "https://system-2.mr-crazycrazy1.repl.co",
+  Dashboard: "https://zezobott.herokuapp.com/",
   invite: "https://discord.com/api/oauth2/authorize?client_id=940378366635290656&permissions=8&redirect_uri=https%3A%2F%2Fpro-system.ml%2Fauth&response_type=code&scope=bot%20identify",
   devs:["910482674915885077"],
-  token: "OTkxNzY4OTA1OTg5MjMwNjMz.GkU142.jGrhG6tMOyoFqdo87E5ekySrCTrq3yzlP8m2JY",
+  token: process.env.token,
   prefix: '1',
   defaultLanguage: 'en',
   blacklistUsers: ['713207310121435187','467394732042092544']
@@ -38,7 +38,7 @@ exports.Website = {
   },
   Websocket: {
     port: process.env.PORT || 3000,
-    redirectURI: 'https://system-2.mr-crazycrazy1.repl.co'
+    redirectURI: 'https://zezobott.herokuapp.com/'
   },
   toggle: true,
   checkAuth(req, res, next) {
